@@ -1,7 +1,7 @@
 {
-  "name": "cryptop",
+  "name": "csbox",
   "version": "1.0.0",
-  "description": "🔑 Cryptop - Vanguard terminal password manager",
+  "description": "🔑 Csbox - Vanguard terminal password manager",
   "author": "Martin Clasen",
   "license": "MIT",
   "keywords": [
@@ -23,7 +23,7 @@
   "type": "module",
   "main": "index.js",
   "bin": {
-    "cryptop": "./index.js"
+    "csbox": "./index.js"
   },
   "scripts": {
     "start": "node index.js",

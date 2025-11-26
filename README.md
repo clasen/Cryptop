@@ -1,14 +1,14 @@
-# Cryptop 🔐
+# Csbox 🔐
 
-**Cryptop** is a modern terminal-based password manager, specially designed for users looking to migrate from the discontinued Dropbox Passwords service.
+**Csbox** is a modern terminal-based password manager, specially designed for users looking to migrate from the discontinued Dropbox Passwords service.
 
-## Why Cryptop?
+## Why Csbox?
 
 Dropbox discontinued its password management service, leaving many users with exported CSV files containing all their passwords in **plain text**. This is a serious security risk - anyone who gains access to your computer or backups could read all your passwords without any barrier.
 
-**Keeping an unencrypted CSV file with your passwords is extremely dangerous.** That's why I created Cryptop: to provide a simple way to encrypt and manage those exported passwords locally.
+**Keeping an unencrypted CSV file with your passwords is extremely dangerous.** That's why I created Csbox: to provide a simple way to encrypt and manage those exported passwords locally.
 
-Cryptop allows you to:
+Csbox allows you to:
 
 - ✅ **Easily import** your exported Dropbox passwords (CSV format)
 - ✅ **Strong encryption** using AES-256 to protect your data
@@ -29,7 +29,7 @@ Cryptop allows you to:
 ### Global Installation
 
 ```bash
-npm install -g cryptop
+npm install -g csbox
 ```
 
 ## Usage
@@ -39,7 +39,7 @@ npm install -g cryptop
 If you have a CSV file exported from Dropbox Passwords:
 
 ```bash
-cryptop exported_dropbox_accounts.csv
+csbox exported_dropbox_accounts.csv
 ```
 
 The program will ask for a **master password** that will be used to encrypt all your data. **Remember this password!** - without it you won't be able to access your accounts.
@@ -57,7 +57,7 @@ The CSV should have the following columns:
 To open the password manager:
 
 ```bash
-cryptop
+csbox
 ```
 
 Enter your master password to unlock the encrypted database.
@@ -85,15 +85,15 @@ Enter your master password to unlock the encrypted database.
 ## Security
 
 - 🔒 **AES-256 encryption**: Your passwords are encrypted with your master password
-- 🚫 **No cloud storage**: Everything is saved locally in `~/.cryptop/db.json`
+- 🚫 **No cloud storage**: Everything is saved locally in `~/.csbox/db.json`
 - 🔑 **Single master password**: You only need to remember one password
 - 💻 **No internet connection**: Doesn't send data to any server
 
 ### ⚠️ Important
 
 1. **Never lose your master password** - there's no way to recover your data without it
-2. Make **regular backups** of the `~/.cryptop/db.json` file
-3. The database is stored in your home directory at `~/.cryptop/db.json`
+2. Make **regular backups** of the `~/.csbox/db.json` file
+3. The database is stored in your home directory at `~/.csbox/db.json`
 4. Use a **strong password** as your master password
 
 ### 🛡️ Security Disclaimer
@@ -102,7 +102,7 @@ This tool was created with the best intentions to help users protect their expor
 
 **Use at your own risk.** I am not responsible for any data loss, security breaches, or other issues that may arise from using this software. If you have extremely sensitive data or require enterprise-level security guarantees, please consider using professionally audited password management solutions.
 
-That said, using Cryptop is **significantly safer than keeping your passwords in a plain text CSV file**.
+That said, using Csbox is **significantly safer than keeping your passwords in a plain text CSV file**.
 
 **Note**: This project is not affiliated with Dropbox Inc. It is an independent tool created to help users manage their passwords locally after the discontinuation of the Dropbox Passwords service.
 
@@ -120,7 +120,7 @@ That said, using Cryptop is **significantly safer than keeping your passwords in
 
 ### User Data
 ```
-~/.cryptop/
+~/.csbox/
 └── db.json        # Encrypted database (created automatically)
 ```
 
@@ -131,9 +131,9 @@ That said, using Cryptop is **significantly safer than keeping your passwords in
    - Go to Settings → Export
    - Save the CSV file
 
-2. Import to Cryptop:
+2. Import to Csbox:
    ```bash
-   cryptop exported_dropbox_accounts.csv
+   csbox exported_dropbox_accounts.csv
    ```
 
 3. Enter a secure master password
@@ -153,7 +153,7 @@ That said, using Cryptop is **significantly safer than keeping your passwords in
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request on the [GitHub repository](https://github.com/clasen/Cryptop).
+Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request on the [GitHub repository](https://github.com/clasen/Csbox).
 
 ## 📄 License
 

@@ -8,7 +8,7 @@ export class AppUI {
     this.db = db;
     this.screen = blessed.screen({
       smartCSR: true,
-      title: 'Cryptop - Password Manager',
+      title: 'Csbox - Password Manager',
       fullUnicode: true,
       autoPadding: true,
       dockBorders: true
@@ -128,7 +128,7 @@ export class AppUI {
         left: 'center',
         width: 19,
         height: 1,
-        content: ' C R Y P T O P ',
+        content: ' C S B O X ',
         align: 'center',
         valign: 'middle',
         style: {
@@ -151,7 +151,7 @@ export class AppUI {
         style: {
             fg: theme.syntax.cyan,
             bg: theme.bg.input,
-            border: { fg: theme.syntax.tertiary },
+            border: { fg: theme.bg.tertiary },
             focus: { border: { fg: theme.syntax.blue } }
         },
         label: ' Search (/) ',

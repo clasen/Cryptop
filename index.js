@@ -7,10 +7,10 @@ import { randomUUID } from 'crypto';
 import path from 'path';
 import os from 'os';
 
-const DB_PATH = path.join(os.homedir(), '.cryptop');
+const DB_PATH = path.join(os.homedir(), '.csbox');
 const DB_FILE = path.join(DB_PATH, 'db.json');
 
-// Ensure the .cryptop directory exists
+// Ensure the .csbox directory exists
 if (!fs.existsSync(DB_PATH)) {
   fs.mkdirSync(DB_PATH, { recursive: true });
 }
@@ -150,7 +150,7 @@ const start = async () => {
   if (args.length > 0) {
     const csvPath = args[0];
     if (csvPath.endsWith('.csv')) {
-      console.log('\x1b[36m%s\x1b[0m', 'Cryptop CSV Importer');
+      console.log('\x1b[36m%s\x1b[0m', 'Csbox CSV Importer');
       
       // Check if database already exists
       const isFirstTime = !fs.existsSync(DB_FILE);
@@ -164,7 +164,7 @@ const start = async () => {
   // Normal startup - launch UI
   // Ensure we start fresh with terminal
   console.clear();
-  console.log('\x1b[36m%s\x1b[0m', 'Welcome to Cryptop');
+  console.log('\x1b[36m%s\x1b[0m', 'Welcome to Csbox');
   
   // Check if database already exists
   const isFirstTime = !fs.existsSync(DB_FILE);
