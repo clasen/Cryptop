@@ -1,10 +1,10 @@
-# Csbox 🔐
+# 🔑 Csbox
 
 **Csbox** is a modern terminal-based password manager, specially designed for users looking to migrate from the discontinued Dropbox Passwords service.
 
 ## Why Csbox?
 
-Dropbox discontinued its password management service, leaving many users with exported CSV files containing all their passwords in **plain text**. This is a serious security risk - anyone who gains access to your computer or backups could read all your passwords without any barrier.
+Dropbox discontinued its password management service, leaving many users with exported CSV files containing all their passwords in **plain text**. This is a serious security risk, anyone who gains access to your computer or backups could read all your passwords without any barrier.
 
 **Keeping an unencrypted CSV file with your passwords is extremely dangerous.** That's why I created Csbox: to provide a simple way to encrypt and manage those exported passwords locally.
 
